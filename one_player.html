@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>One Player : Blackjack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <h1><a href="./index.html" class="back">Back</a><span>Blackjack</span></h1>
+    <button class="drawCard" onclick="twoCards(this)">Draw Two Cards</button>
+    <div class="content">
+        <div id="card-container-one">
+            <button class="addCard" onclick="hit(this)">Draw Card</button>
+            <div class="cards-one"></div>
+        </div>
+        <div id="card-container-two" class='one-player-two'>
+            <div class="cards-two"></div>
+        </div>
+    </div>
+</body>
+
+</html>
